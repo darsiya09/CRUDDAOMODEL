@@ -7,7 +7,8 @@
 <body>
 
 <div th:each="person : ${index}">
-    <a th:href="@{/people/{id}(id=${person.getId()})}" th:text="${person.getName()}">user</a>
+    <a th:href="@{/people/{id}(id=${person.getId()})}"
+       th:text="'Name: ' + ${person.getName()} + ', Age:' + ${person.getAge()} + ', Email:' + ${person.getEmail()}">user</a>
 </div>
 
 <form th:method="GET" th:action="@{/people/new}">

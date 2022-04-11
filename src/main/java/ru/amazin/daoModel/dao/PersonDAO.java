@@ -12,7 +12,7 @@ public class PersonDAO {
 
     {
         people = new ArrayList<>();
-        people.add(new Person(++PEOPLE_COUNT, "Vanek"));
+        people.add(new Person(++PEOPLE_COUNT, "Vanek", 30, "vanek@vk.com"));
     }
 
     public List<Person> index(){
