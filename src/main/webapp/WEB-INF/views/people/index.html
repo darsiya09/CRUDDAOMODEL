@@ -11,6 +11,9 @@
        th:text="'Name: ' + ${person.getName()} + ', Age:' + ${person.getAge()} + ', Email:' + ${person.getEmail()}">user</a>
 </div>
 
+<br/>
+<hr/>
+
 <form th:method="GET" th:action="@{/people/new}">
     <input type="submit" value="New"/>
 </form>

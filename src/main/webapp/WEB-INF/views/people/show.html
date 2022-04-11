@@ -16,5 +16,8 @@
 <form th:method="DELETE" th:action="@{/people/{id}(id=${person.getId()})}" th:object="${person}">
     <input type="submit" value="Delete"/>
 </form>
+<form th:method="GET" th:action="@{/people}">
+    <input type="submit" value="back">
+</form>
 </body>
 </html>
